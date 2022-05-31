@@ -15,6 +15,9 @@ What variable(s) are considered the target(s) for your model?
 What variable(s) are considered to be the features for your model?
 What variable(s) are neither targets nor features, and should be removed from the input data?
 
+Since the goal to create an algorithm for successful candidates, the target for the model correlates with the output, that is applicants name that are labeled as successful.
+The EIN feature is not a good target for output. 
+
 
 Compiling, Training, and Evaluating the Model
 
