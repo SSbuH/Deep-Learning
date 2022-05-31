@@ -1,0 +1,76 @@
+For this part of the Challenge, you’ll write a report on the performance of the deep learning model you created for AlphabetSoup.
+The report should contain the following:
+
+
+Overview of the analysis: Explain the purpose of this analysis.
+The purpose of this analysis is to assist the non-profit foundation Alphabet Soup to create an algorithm to predict whether or not applicants for funding will be successful using features set to create a binary classifier that is capable of predicting whether applicants will be successful if funded by Alphabet Soup.
+and using a CSV containing more than 34,000 organizations that have received funding from Alphabet Soup over the years. 
+
+
+Results: Using bulleted lists and images to support your answers, address the following questions.
+
+Data Preprocessing
+
+What variable(s) are considered the target(s) for your model?
+What variable(s) are considered to be the features for your model?
+What variable(s) are neither targets nor features, and should be removed from the input data?
+
+
+Compiling, Training, and Evaluating the Model
+
+How many neurons, layers, and activation functions did you select for your neural network model, and why?
+Were you able to achieve the target model performance?
+What steps did you take to try and increase model performance?
+
+* For models DeepLearning and Optimization, the neural network was applied using a three multiple layers, where the number of features was associated to the hdden nodes.
+In the DeepLearning model both EIN and NAME were removed producing a total of 477 parameters with 0.7252 accuracy which fell below the target of 0.75.
+Owing to this, the Optimization model was used where the name was not removed and this produced 3298 parameters with a 0.7888 accuracey which met the target and went above the target of 0.75.
+
+Examples of rresults for both models is displayed below.
+
+DeepLearning Model
+
+Model: "sequential_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense (Dense)               (None, 7)                 350       
+                                                                 
+ dense_1 (Dense)             (None, 14)                112       
+                                                                 
+ dense_2 (Dense)             (None, 1)                 15        
+                                                                 
+=================================================================
+Total params: 477
+Trainable params: 477
+Non-trainable params: 0
+_________________________________________________________________
+
+268/268 - 0s - loss: 0.5553 - accuracy: 0.7252 - 218ms/epoch - 812us/step
+Loss: 0.555324375629425, Accuracy: 0.7252478003501892
+
+
+
+Alphabetsoupcharity Optimization model
+
+Model: "sequential_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense (Dense)               (None, 7)                 3171      
+                                                                 
+ dense_1 (Dense)             (None, 14)                112       
+                                                                 
+ dense_2 (Dense)             (None, 1)                 15        
+                                                                 
+=================================================================
+Total params: 3,298
+Trainable params: 3,298
+Non-trainable params: 0
+_________________________________________________________________
+
+268/268 - 0s - loss: 0.4708 - accuracy: 0.7888 - 318ms/epoch - 1ms/step
+Loss: 0.47075796127319336, Accuracy: 0.7888046503067017
+
+
+Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
