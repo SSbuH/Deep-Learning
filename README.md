@@ -1,9 +1,12 @@
 # Deep-Learning
 Charity Funding Predictor
 
-Link to DeepLearning.ipynb was added since I kept getting an error code 'unable to render code' during upload from google colab to github https://colab.research.google.com/drive/1IZZeSJSIbQ57iwptSSDc9PBxCKOPqc7M#scrollTo=f71Tq-ujsVwY
+Link to DeepLearning.ipynb was added since I kept getting an error code 'unable to render code' during upload from google colab to github
+DeepLearning.ipynb
+https://colab.research.google.com/drive/1IZZeSJSIbQ57iwptSSDc9PBxCKOPqc7M#scrollTo=f71Tq-ujsVwY
 
-
+Alphabetsoupcharity_Optimization.ipynb
+https://colab.research.google.com/drive/1W2pSle1-9jfNflqh3VXPKwvHwBTgJPzk#scrollTo=xRyvWUcJGUjU
 
 
 Deep Learning Homework: Charity Funding Predictor
